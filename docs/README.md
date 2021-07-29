@@ -16,8 +16,6 @@ actionLink: /about
 footer: MIT Licensed | Copyright © 2021-present kouyanju_Glowing
 ---
 
-
-
 <style>
 /* .dropdown-wrapper{
    position:relative;

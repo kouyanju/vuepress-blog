@@ -2,10 +2,6 @@
 navbar:false
 title:"关于我"   
 ---
-<!--
-<clock></clock>
-<test-template></test-template>
--->
 
 # About Author
 
@@ -67,5 +63,3 @@ table{
   border-collapse:collapse;
 }
 </style>
-
-

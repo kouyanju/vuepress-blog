@@ -8,7 +8,7 @@
     </div>
 </template>
 <script>
-import moment from 'moment';
+import moment from 'moment'
 export default{
     props:{
         styleObj:{
@@ -47,17 +47,17 @@ export default{
 <style lang="stylus" scoped>
 .date-info {
     float: right;
-    padding-right: 30px;
+    padding-right: 20px;
     & > * {
         display: inline-block;
         vertical-align: middle;
     }
     .date-info__left {
-        font-size: 64px;
+        font-size: 40px;
         margin-right: 5px;
     }
     .date-info__right {
-        font-size: 20px;
+        font-size: 15px;
         line-height: 1.5em;
     }
 }
