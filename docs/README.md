@@ -17,21 +17,6 @@ footer: MIT Licensed | Copyright © 2021-present kouyanju_Glowing
 ---
 
 <style>
-/* .dropdown-wrapper{
-   position:relative;
-}
-.nav-dropdown{
-    position: absolute;
-    overflow: hidden;/*必须用overflow,不然内容会挤出去，就算设置高度为零也没意义*/
-    /* height:0;
-    transition: 2s;
-}
-.dropdown-wrapper:hover .nav-dropdown{
-    height : 100px;
-} */
-
-
-
 .hero>img{
     width: 200px;
     height: 200px;
@@ -42,9 +27,7 @@ footer: MIT Licensed | Copyright © 2021-present kouyanju_Glowing
     -moz-transition: -moz-transform .5s ease-out;
     -o-transition: -o-transform .5s ease-out;
     -ms-transition: -ms-transform .5s ease-out
-
 }
-
 img:hover {
     -webkit-transform: rotateZ(360deg);
     -moz-transform: rotateZ(360deg);
@@ -59,4 +42,3 @@ img:hover {
     width: 100vw;
 }
 </style>
-

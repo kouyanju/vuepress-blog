@@ -24,7 +24,7 @@ export default{
             timeInterval:null
         }
     },
-    created(){
+    mounted(){
         const momentNow=moment();
         this.date=momentNow.format('YYYY-MM-DD');
         const dayNameMapping=[

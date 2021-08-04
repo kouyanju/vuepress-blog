@@ -42,9 +42,6 @@ export default {
     },
     play () {
       this.timer = setInterval(this.autoPlay, 2500)
-    },
-    change (i) {  
-      this.mark = i  
     }
   },
   mounted () {

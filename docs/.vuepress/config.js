@@ -13,7 +13,6 @@ module.exports = {
         logo: '/assets/hero.png',//添加导航栏左侧logo
         // navbar: false,//禁用导航栏
         nav: navConf,//增加导航栏链接
-        sidebar: [],
         sidebarDepth:2,
     },
 
