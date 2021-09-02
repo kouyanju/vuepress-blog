@@ -59,6 +59,7 @@ ssh-keygen -t rsa -C "your_email@example.com"
 # generating public/private rsa key.
 # 一直按enter
 ```
+
 然后找到.ssh/id_rsa.pub文件查看内容
 ```
 cd ~/.ssh
