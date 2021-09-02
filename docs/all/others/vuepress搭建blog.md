@@ -150,6 +150,7 @@ module.exports = {
 ```
   （6）设置最后更新时间提示<br>
   可以通过 themeConfig.lastUpdated 选项来获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部：
+  <br/>进行git提交时，不要忘了.gitignore文件的创建。
 ```js
 // .vuepress/config.js
 module.exports = {
@@ -158,7 +159,6 @@ module.exports = {
   }
 }
 ```
-  (7)
 
 3. markdown基本语法要了解<br/>
 所有的 Markdown 文件都会被编译成 Vue 组件，展示在可见的页面中。
@@ -188,6 +188,7 @@ yarn add -D @vuepress/plugin-pwa
 ```
 (2)使用
 ```js
+
 module.exports = {
   head:[
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -199,6 +200,7 @@ module.exports = {
           message: "发现新内容可用",
           buttonText: "刷新"
         }
+    }
   }
 }
 ```
@@ -207,18 +209,9 @@ module.exports = {
 (1)安装
 
 ```sh
-# use Github V3
-npm install @vssue/api-github-v3
-# OR: use Github V4
+npm install @vssue/vuepress-plugin-vssue
+#use Github V4
 npm install @vssue/api-github-v4
-# OR: use Gitlab V4
-npm install @vssue/api-gitlab-v4
-# OR: use Bitbucket V2
-npm install @vssue/api-bitbucket-v2
-# OR: use Gitee V5
-npm install @vssue/api-gitee-v5
-# OR: use Gitea V1
-npm install @vssue/api-gitea-v1
 ```
 (2)使用
 ```js
@@ -233,12 +226,13 @@ npm install @vssue/api-gitea-v1
     clientSecret: '6d227535a0f91602c758f9cae19b9eead126bd3f',//注册的Client Secret
     autoCreateIssue: true,// 自动创建评论，默认是false，最好开启，这样首次进入页面的时候就不用去点击创建评论的按钮了。
 },
-```
 
+//使用 Vssue 组件,可以在Markdown 文件中直接使用它
+`<vssue :options="{locale:'zh'}"/>`
+```
 4.自动生成侧边栏
 <br>
 (1)安装
-
 ```sh
 npm i vuepress-plugin-auto-sidebar -D
 ```
@@ -276,7 +270,7 @@ module.exports = {
 
 说了这么多都是在本地进行的，现在我们要把本地的内容推送到某个服务器上，这样只要有网络，就可以随时随地看自己的网站了。
 
-### 一般来说，有两种方案可供选择：
+### 一般来说，有两种方案可以选择：
 
 - 自己买一个服务器，阿里云、腾讯云等，这种方式的好处是速度有保证、可以被搜索引擎收录，坏处是要花钱啊 土豪同学可以考虑。
 - 使用 Github Pages 。
@@ -307,7 +301,7 @@ USERNAME 必须是你 Github 的账号名称，不是你的名字拼音，也不
 set -e
 
 # 生成静态文件
-npm run build
+npm run docs:build
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist

@@ -1,9 +1,7 @@
 const headConf = require("./config/headConf");
 const pluginsConf = require("./config/pluginsConf");
-const { description } = require("commander");
+// const { description } = require("commander");
 const navConf = require("./config/navConf");
-
-
 
 module.exports = {
     title:"Glowing'blog",
@@ -15,9 +13,6 @@ module.exports = {
         nav: navConf,//增加导航栏链接
         sidebarDepth:2,
     },
-
     head:headConf, 
     plugins:pluginsConf,
-
-
   }
